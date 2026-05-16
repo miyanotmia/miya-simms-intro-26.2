@@ -35,7 +35,7 @@ h2{
 
 #Experience{
     text-align: center;
-   
+   width: 80%;
 }
 .experience-list{
     display:inline-flex;
@@ -53,7 +53,7 @@ justify-content: center;
     padding: 15px;
     margin: 10px;
    list-style-type: none;
-    flex-direction: column; 
+    flex-direction: row; 
     
    
 }
