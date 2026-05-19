@@ -67,12 +67,11 @@ img{
  height: 60px;
 
 }
-#connect-list{
+.connect-list{
  display: flex;  
 justify-content: center;
 }
-#connect-item{
+.connect-item{
    list-style-type: none;
-    flex-direction: row;
-    
+    flex-direction: row; 
 }
