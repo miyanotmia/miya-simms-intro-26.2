@@ -12,7 +12,7 @@ copyright.innerHTML = `\u00a9 Miya Simms ${thisYear}`;
 footer.appendChild(copyright);
 
 const skills = ['Sass','MongoDB', 'Vercel', 'Google Web Analytics', 'HTML'];
-const skillsSection = document.querySelector("#Skills");
+const skillsSection = document.querySelector("#skills");
 
 const skillsList = skillsSection.querySelector("ul");
 

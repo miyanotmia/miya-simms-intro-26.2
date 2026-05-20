@@ -96,12 +96,12 @@ justify-content: center;
     flex-direction: row; 
 }
 
-#Skills ul{
+#skills ul{
     display: flex;
    justify-content: center;
     
 }
-#Skills li{
+#skills li{
     list-style-type: none;
     font-size: 20px;
     padding: 5px;
