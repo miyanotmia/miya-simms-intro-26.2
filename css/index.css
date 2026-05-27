@@ -112,3 +112,28 @@ justify-content: center;
     align-content: center;
     
 }
+
+
+#message-form{
+    display: flexbox;
+    
+    label {
+    font-size: 16px;
+    padding: 10px;
+}
+textarea{
+    margin: 10px;
+    padding: 10px;
+}
+
+}
+
+button{
+ width: 100px;
+ height: 25px;
+ background-color: snow;
+}
+button :hover{
+    background-color: #c60023;
+    color: snow;
+}
