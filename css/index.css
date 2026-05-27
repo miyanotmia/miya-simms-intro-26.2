@@ -117,21 +117,40 @@ justify-content: center;
 #message-form{
     display: flexbox;
     
-    label {
+}  
+#message-form{
+ label {
     font-size: 16px;
     padding: 10px;
+
 }
-textarea{
+
+}
+#message-form textarea{
     margin: 10px;
     padding: 10px;
 }
-
+#messages{
+    display: flexbox;
+    justify-items: center;
+    
 }
 
+#messages ul{
+    background-color: #c60024fa;
+    color: snow;
+    max-width: 200px;
+    flex-wrap: wrap;
+    list-style: none;
+   border-radius: 10px;
+  
+}
 button{
  width: 100px;
  height: 25px;
+ border-radius: 5px;
  background-color: snow;
+ margin: 5px;
 }
 button :hover{
     background-color: #c60023;
