@@ -118,14 +118,13 @@ justify-content: center;
     display: flexbox;
     
 }  
-#message-form{
- label {
+#message-form label {
     font-size: 16px;
     padding: 10px;
 
 }
 
-}
+
 #message-form textarea{
     margin: 10px;
     padding: 10px;
