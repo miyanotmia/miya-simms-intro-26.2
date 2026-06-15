@@ -32,7 +32,8 @@
              <li><a href="#experience"><h2>Experience</h2></a> </li>
              <li><a href="#skills"><h2>Skills</h2></a></li> 
           <li> <a href="#projects"><h2> Projects</h2></a></li>  
-            <li> <a href="#Connect"><h2>Connect</h2></a> </li>
+            <li> <a href="#connect"><h2>Connect</h2></a> </li>
+            <li> <a href="#message-form"><h2>Message</h2></a> </li>
             </ul>
            
          </nav>
@@ -69,10 +70,10 @@
    </section>
         
              <section id="projects">
-     <h2>projects</h2>
+     <h2>Projects</h2>
       <ul></ul>
         </section>
-       <section id="Connect">
+       <section id="connect">
 
         <h2>Connect</h2>
 
@@ -80,16 +81,30 @@
 
             <li class="connect-item">
 
-               <a href="https://github.com/miyanotmia" ><img src="./img/github-graphic.png"></a>
+               <a href="https://github.com/miyanotmia" ><img src="./img/github-graphic.png" alt="connect-github-graphic"></a>
 
             </li>
 
-            <li class="connect-item"> <a href="https://www.linkedin.com/in/miyasimms"><img src="./img/linkedin-graphic.png"></a> </li>
+            <li class="connect-item"> <a href="https://www.linkedin.com/in/miyasimms"><img src="./img/linkedin-graphic.png" alt="connect-linkedin-graphic"></a> </li>
 
         </ul>
+       </section>
+       <section id="message-form">
+        <h2>Leave a message</h2>
+        <form name="leave_message">
+            <label for="usersName">First Name</label> <br>
+            <input type="text" name="usersName" required id="username"> <br>
+             <label for="usersEmail">Email</label><br>
+            <input type="email" name="usersEmail" required id="userEmail"> <br>
+             <label for="usersMessage">Write your message below</label><br>
+            <textarea name="usersMessage" required id="usersMessage"></textarea> <br>
+            <button type="submit">Submit</button>
 
-       
-
+        </form>
+       </section>
+       <section id="messages">
+        <h2>Messages</h2>
+        <ul></ul>
        </section>
 <script src="./js/index.js"></script>
     </body>

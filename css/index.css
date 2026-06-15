@@ -13,9 +13,7 @@ h1{
     font-size: 80px;
     width: 45%;
     text-align: center;
-    
-    
-    
+
 }
 p{
     font-size: 20px;
@@ -36,6 +34,7 @@ h2{
 #experience{
     text-align: center;
    width: 80%;
+   margin: 0 auto;
 }
 .experience-list{
     display:inline-flex;
@@ -58,29 +57,36 @@ justify-content: center;
    
 }
 #navbar{
-    text-decoration:none;
+    text-decoration-line:none;
     display: flex;
     justify-content: center;
     padding: 10px;
     margin: 10px;
 }
-#navbar :hover{
+#navbar li:hover{
     background-color: #c60023;
     color: snow;
+    text-decoration-line: none;
 }
-#navbar a{
-    text-decoration: none;
+#navbar li:hover a{
+    color: snow;
 }
 #navbar li{
     flex-direction: row;
     text-decoration: none;
+    text-decoration-line: none;
     list-style-type: none;
      border-style: groove;
     border-radius: 10px;
     border-color: #B74F0D;
     align-content: center;
     margin: 5px;
-    padding: 5px;   
+    padding: 10px 15px;   
+}
+#navbar li a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 img{
  width: 60px;
@@ -111,4 +117,81 @@ justify-content: center;
     border-color: #B74F0D;
     align-content: center;
     
+}
+
+
+#message-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}  
+#message-form label {
+    font-size: 16px;
+    padding: 10px;
+}
+
+
+#message-form textarea{
+    margin: 10px;
+    padding: 10px;
+}
+@media(max-width: 600px ){
+    #message-form input,
+    #message-form textarea,
+    #message-form button{
+        width:90%;
+        font-size: 16px;
+    }
+}
+#messages{
+    display: flex;
+    justify-items: center;
+}
+
+#messages ul{
+    color: green;
+    max-width: 200px;
+    flex-wrap: wrap;
+    list-style: none;
+   border-radius: 10px;
+  
+}
+button{
+ width: 100px;
+ height: 25px;
+ border-radius: 5px;
+ background-color: snow;
+ margin: 5px;
+}
+button:hover{
+    background-color: #c60023;
+    color: snow;
+}
+
+@media (max-width: 768px){
+    #navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    #navbar li{
+        width: 80%;
+        text-align: center;
+    }
+    .experience-item{
+        width: 90%;
+        flex-wrap: wrap;
+    }
+    #skills ul{
+        flex-wrap: wrap;
+    }
+
+    h1{
+        padding-left: 0;
+        width: 100%;
+        font-size: 48px;
+    }
+    #experience {
+        width: 95%;
+    }
 }
