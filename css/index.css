@@ -114,11 +114,31 @@ justify-content: center;
     margin: 10px;
     border-style: groove;
     border-radius: 10px;
-    border-color: #B74F0D;
+    border-color: #c60023;
     align-content: center;
     
 }
 
+#projects ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    margin-left: 25%;
+    max-width: 50%;
+    color: #B74F0D;
+
+}
+#projects li{
+    list-style: none;
+    border-radius: 10px;
+    border: 3px;
+   border-style: inset;
+    padding: 10px 15px;
+    border-color: #c60023;
+
+}
 
 #message-form{
     display: flex;
@@ -146,15 +166,17 @@ justify-content: center;
 }
 #messages{
     display: flex;
-    justify-items: center;
+    justify-content: center;
 }
 
 #messages ul{
-    color: green;
+    color: #652C07;
     max-width: 200px;
     flex-wrap: wrap;
     list-style: none;
    border-radius: 10px;
+   font-size: 18px;
+   
   
 }
 button{
@@ -168,6 +190,8 @@ button:hover{
     background-color: #c60023;
     color: snow;
 }
+
+
 
 @media (max-width: 768px){
     #navbar{

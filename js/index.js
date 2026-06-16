@@ -24,6 +24,27 @@ for (let i = 0; i < skills.length; i++){
     skillsList.appendChild(skill);
 }
 
+fetch("https://api.github.com/users/MIYANOTMIA/repos")
+.then(response => response.json())
+.then (data => {
+    let repositories = data;
+    console.log(repositories);
+
+const projectSection = document.querySelector("#projects"
+);
+const projectList = projectSection.querySelector("ul");
+
+for (let i = 0; i < repositories.length; i++){
+    let project = document.createElement("li");
+    project.innerText = repositories[i].name;
+    projectList.appendChild(project);
+}
+})
+
+.catch(error => {
+    console.log("Something went wrong", error);
+});
+
 let messageForm = document.querySelector("[name='leave_message']");
 
 messageForm.addEventListener("submit", function(event){
@@ -49,3 +70,4 @@ messageForm.addEventListener("submit", function(event){
     
    event.target.reset();
 })
+
