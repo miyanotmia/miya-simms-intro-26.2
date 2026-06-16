@@ -42,7 +42,10 @@ for (let i = 0; i < repositories.length; i++){
 })
 
 .catch(error => {
-    console.log("Something went wrong", error);
+    const errorMessage = document.createElement('p');
+    errorMessage.textContent = "Something went wrong while fetching the repository data. Please try again.";
+
+    projectSection.appendChild(errorMessage);
 });
 
 let messageForm = document.querySelector("[name='leave_message']");
